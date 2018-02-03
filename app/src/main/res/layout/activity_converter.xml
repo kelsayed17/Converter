@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context="com.example.kelsayed.converter.ConverterActivity">
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/convert_button" />
+
+    <TextView
+        android:id="@+id/usd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/convert_button"
+        android:gravity="center_vertical"
+        android:text="@string/usd"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/usd_amount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/convert_button"
+        android:layout_toEndOf="@+id/usd"
+        android:hint="@string/usd_amount"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/inr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usd"
+        android:gravity="center_vertical"
+        android:text="@string/inr"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inr_amount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/usd_amount"
+        android:layout_toEndOf="@+id/inr"
+        android:hint="@string/inr_amount"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+</RelativeLayout>
